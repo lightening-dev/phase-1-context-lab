@@ -21,3 +21,40 @@ const allWagesFor = function () {
     return payable
 }
 
+
+
+        
+
+
+
+
+
+
+
+
+
+function createEmployeeRecord(employeeArray) {
+
+             return {
+                    
+                    firstName: employeeArray[0],
+                    
+                    familyName:  employeeArray[1],
+                    title:  employeeArray[2],
+                    payPerHour: employeeArray[3],
+                    timeInEvents: [],
+                    timeOutEvents: [],
+            }
+        }
+
+
+        function createEmployeeRecords(arrayOfEmployeeRecords){ 
+            return (arrayOfEmployeeRecords.map(employee => {
+     
+                 return createEmployeeRecord(employee);
+     
+     
+                 
+             }))
+        }
+        
